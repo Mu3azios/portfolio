@@ -1,0 +1,7 @@
+html {
+  /* Tells the browser to leave a 90px gap at the top when snapping to any #id link */
+  scroll-padding-top: 70px; 
+  
+  /* Adds a smooth cinematic glide instead of an instant, jarring jump */
+  scroll-behavior: smooth; 
+}

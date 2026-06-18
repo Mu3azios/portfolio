@@ -1,0 +1,31 @@
+/* GetInTouch.module.css */
+
+.wrapper {
+  display: flex;
+
+  border-radius: var(--mantine-radius-lg);
+  padding: var(--mantine-spacing-xl);
+  gap: var(--mantine-spacing-sm); /* Forces consistent, native gaps between blocks */
+}
+
+.contacts {
+  flex: 0 0 35%; /* Hard allocates exactly 35% of the total card width to your info */
+
+  border-radius: var(--mantine-radius-md);
+  padding: var(--mantine-spacing-xl);
+}
+
+.form {
+  flex: 1; /* Instructs the form to fill up 100% of the remaining 65% space evenly */
+  padding: var(--mantine-spacing-xl);
+}
+
+/* Fix mobile screens so they stack vertically */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .contacts {
+    flex: 1 1 100%;
+  }
+}
