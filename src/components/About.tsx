@@ -1,5 +1,5 @@
 // Services.tsx
-import { Container, Title, Text, Box, Flex, Group, SimpleGrid } from "@mantine/core";
+import { Container, Title, Text, Box, Flex, Group } from "@mantine/core";
 import IndicatorElement from "./IndicatorElement";
 import { IconCodeCircle2, IconDeviceMobileCode, IconServerBolt, IconBolt } from "@tabler/icons-react";
 
@@ -56,7 +56,7 @@ export function About() {
           {/* RIGHT SIDE COLUMN: ABOUT CONTENT & STAT COUNTERS */}
           <Box style={{ flex: 1.2, width: "100%" }}>
             {/* Main Section Header */}
-            <Title c="white" order={2} fz={{ base: "1rem", sm: "1.5rem" }} fw={800} mb="lg" c="myColor.5"  tt="uppercase" lts="2px">
+            <Title order={2} fz={{ base: "1rem", sm: "1.5rem" }} fw={800} mb="lg" c="myColor.5"  tt="uppercase" lts="2px">
               About me
             </Title>
 

@@ -1,5 +1,4 @@
-import React from "react";
-import {Flex, Box, Group, Paper, SimpleGrid, Text, Textarea, TextInput } from '@mantine/core';
+import {Flex, Box } from '@mantine/core';
 
 
 const IndicatorElement = () => {

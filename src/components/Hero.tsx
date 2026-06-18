@@ -45,9 +45,9 @@ export function HeroSection() {
   }, [currentText, isDeleting, currentWordIndex, typingSpeed]);
 
   return (
-    <Box py={{ base: 5, sm: 60 }} style={{ display: "flex", alignItems: "center" }} style={{ borderBottom: "1px solid #2c2e33" }} id="home">
+    <Box py={{ base: 5, sm: 60 }} style={{ display: "flex", alignItems: "center", borderBottom: "1px solid #2c2e33"  }} id="home">
       <Container size="lg">
-        <Grid gutter={50} align="center">
+        <Grid  align="center">
           {/* LEFT SIDE: Hero copy & animated loop hooks */}
           <Grid.Col span={{ base: 12, md: 7 }}>
             <Text c="white" fz="xl" fw={500} mb="xs">
@@ -66,7 +66,7 @@ export function HeroSection() {
               </Text>
             </Title>
 
-            <Text c="gray.5" fz="lg" mt="md" maxW={550}>
+            <Text c="gray.5" fz="lg" mt="md" maw={550}>
               Specializing in high-performance web systems, intuitive interfaces, and protected commercial products.
             </Text>
             <Flex gap="md" justify={{ base: "center", sm: "flex-start" }} align="flex-start" direction="row" wrap="wrap">

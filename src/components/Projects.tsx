@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, SimpleGrid, Title, Text, Card, Box, Image, Badge, Group, Button, Flex } from "@mantine/core";
 import { IconSunHigh, IconBrandLaravel, IconAtom, IconBrandReact  } from '@tabler/icons-react';
 
@@ -48,7 +47,7 @@ const Projects = () => {
           <Title c="white" fz={{ base: "2rem", sm: "2.5rem" }} fw={900} mt="xs">
             Proven Development Case Studies
           </Title>
-          <Text c="gray.5" fz="md" maxW={600} mx="auto" mt="sm">
+          <Text c="gray.5" fz="md" maw={600} mx="auto" mt="sm">
             Review production-ready projects showing strict type safety, clean semantic markup, and responsive performance scales.
           </Text>
         </Box>
@@ -70,7 +69,6 @@ const Projects = () => {
                 ) : (
                   // Elegant dark-mode fallback banner block for desktop utility apps without screenshots
                   <Flex 
-                    height={180} 
                     bg="#1a1b1e" 
                     justify="center" 
                     align="center" 

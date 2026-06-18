@@ -1,4 +1,4 @@
-import { IconAt, IconPhone, IconBrandLinkedin, IconBrandGithub, IconBrandWhatsapp, IconSun } from '@tabler/icons-react';
+import { IconAt, IconBrandLinkedin, IconBrandGithub, IconBrandWhatsapp, IconSun } from '@tabler/icons-react';
 import { Box, Stack, Text } from '@mantine/core';
 import classes from './ContactIcons.module.css';
 

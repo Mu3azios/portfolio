@@ -1,5 +1,5 @@
 // App.tsx
-import { AppShell, Group, Anchor } from "@mantine/core";
+import { AppShell, Anchor, Stack } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { Header } from "./components/Header"; // Import your new Header component
 import { HeroSection } from "./components/Hero"; // Your hero section file
@@ -7,7 +7,7 @@ import { About } from "./components/About";
 import Projects from "./components/Projects";
 import { GetInTouch } from "./components/GetInTouch";
 import { SkillsSection } from "./components/Skills";
-import IndicatorElement from "./components/IndicatorElement";
+
 import "./App.css";
 
 export default function App() {
@@ -20,7 +20,7 @@ export default function App() {
 
       {/* MOBILE DRAWER PANEL */}
       <AppShell.Navbar p="xl" bg="#141517" style={{ borderBottom: "1px solid #2c2e33" }}>
-        <Group gap="lg" direction="column">
+      <Stack gap="lg">
           <Anchor href="#home" c="white" fz="lg" onClick={toggle}></Anchor>
           <Anchor href="#about" c="white" fz="lg" onClick={toggle}>
             About
@@ -31,7 +31,7 @@ export default function App() {
           <Anchor href="#contact" c="white" fz="lg" onClick={toggle}>
             Contact
           </Anchor>
-        </Group>
+        </Stack>
       </AppShell.Navbar>
 
       {/* CORE CONTENT CANVAS */}
