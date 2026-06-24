@@ -69,12 +69,13 @@ export function SkillsSection() {
               <SimpleGrid cols={{ base: 1, sm: 2, md: 4 }} spacing="lg">
                 {skills.map((skill, idx) => (
                   <Card 
+                  className='premium-hover'
                     key={idx} 
                     padding="md" 
                     radius="md" 
                     style={{ backgroundColor: '#141517', border: '1px solid #2c2e33' }}
                   >
-                    <Group justify="space-between">
+                    <Group justify="space-between" >
                       <Text c="white" fw={600} fz="sm">{skill.name}</Text>
                       <Badge color="myColor.5" variant="light" size="xs" radius="sm">
                         {skill.level}

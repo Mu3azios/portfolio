@@ -61,6 +61,7 @@ const Projects = () => {
               padding="lg" 
               radius="md"
               style={{ backgroundColor: "#141517", border: "1px solid #2c2e33", display: "flex", flexDirection: "column" }}
+         className="premium-hover"
             >
               <Card.Section>
                 {work.image ? (

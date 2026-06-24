@@ -4,4 +4,28 @@ html {
   
   /* Adds a smooth cinematic glide instead of an instant, jarring jump */
   scroll-behavior: smooth; 
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+/* Clean Micro-Zoom & Glow Blueprint */
+.premium-hover {
+  transition: transform 0.25s cubic-bezier(0.25, 1, 0.5, 1), 
+              box-shadow 0.25s cubic-bezier(0.25, 1, 0.5, 1), 
+              background-color 0.2s ease, 
+              color 0.2s ease !important;
+}
+
+@media (hover: hover) {
+  .premium-hover:hover {
+    /* FIX 1: Subtle, high-end 3% structural scale expansion */
+    transform: scale(1.03); 
+    
+    /* FIX 2: Concentrated border glow overlay + wide soft ambient glow backdrop */
+    box-shadow: 0 0 12px 1px rgba(163, 230, 53, 0.6), 
+                0 10px 30px -10px rgba(163, 230, 53, 0.3);
+    
+    /* Flips font color and backgrounds smoothly */
+ 
+    /* color: #1a1b1e !important; */
+  }
 }

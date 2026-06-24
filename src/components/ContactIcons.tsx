@@ -11,9 +11,9 @@ interface ContactIconProps extends Omit<React.ComponentPropsWithoutRef<'div'>, '
 
 function ContactIcon({ icon: Icon, title, description, link, ...others }: ContactIconProps) {
   return (
-    <div className={classes.wrapper} {...others}>
+    <div className={classes.wrapper} {...others} >
       {/* Icon Wrapper colored with your lime green theme token */}
-      <Box mr="md" style={{ display: 'flex', alignItems: 'center', color: 'var(--mantine-color-myColor-5)' }}>
+      <Box mr="md" style={{ display: 'flex', alignItems: 'center', color: 'var(--mantine-color-myColor-5)' }} >
         <Icon size={24} />
       </Box>
 

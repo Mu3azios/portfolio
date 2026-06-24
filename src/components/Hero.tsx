@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { Container, Grid, Title, Text, Button, Image, Box, Flex } from "@mantine/core";
 import muaz from "../assets/muaz1.webp";
+import 'animate.css';
+
+
 
 
 const WORDS_TO_TYPE = ["Full-Stack Developer", "UI/UX Enthusiast", "Problem Solver"];
@@ -50,11 +53,11 @@ export function HeroSection() {
         <Grid  align="center">
           {/* LEFT SIDE: Hero copy & animated loop hooks */}
           <Grid.Col span={{ base: 12, md: 7 }}>
-            <Text c="white" fz="xl" fw={500} mb="xs">
+            <Text c="white" fz="xl" fw={500} mb="xs" className="animate__animated  animate__fadeInLeft animate__delay-0.2s">
               Hi, I'm Muaz
             </Text>
 
-            <Title c="white" fz={{ base: "1.9rem", sm: "3.5rem" }} fw={900} lh={1.2}>
+            <Title c="white" fz={{ base: "1.9rem", sm: "3.5rem" }} fw={900} lh={1.2} className="animate__animated  animate__fadeInLeft animate__delay-0.5s">
               I build scalable applications as a<br></br>{" "}
               <Text
                 component="span"
@@ -66,7 +69,7 @@ export function HeroSection() {
               </Text>
             </Title>
 
-            <Text c="gray.5" fz="lg" mt="md" maw={550}>
+            <Text c="gray.5" fz="lg" mt="md" maw={550} className="animate__animated  animate__fadeInLeft animate__delay-1s">
               Specializing in high-performance web systems, intuitive interfaces, and protected commercial products.
             </Text>
             <Flex gap="md" justify={{ base: "center", sm: "flex-start" }} align="flex-start" direction="row" wrap="wrap">
@@ -137,6 +140,7 @@ export function HeroSection() {
                 width: "320px",
                 height: "320px",
               }}
+            className="animate__animated  animate__zoomIn animate__delay-1.5s"
             >
               <Image
                 src={muaz}

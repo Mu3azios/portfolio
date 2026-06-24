@@ -7,7 +7,7 @@ import { About } from "./components/About";
 import Projects from "./components/Projects";
 import { GetInTouch } from "./components/GetInTouch";
 import { SkillsSection } from "./components/Skills";
-
+// import TargetCursor from "./animated/targetCursor/TargetCursor";
 import "./App.css";
 
 export default function App() {
@@ -16,11 +16,12 @@ export default function App() {
   return (
     <AppShell header={{ height: 70 }} navbar={{ width: "100%", breakpoint: "sm", collapsed: { desktop: true, mobile: !opened } }} padding="md">
       {/* 1. RENDER RENDERED HEADER COMPONENT */}
+      {/* <TargetCursor spinDuration={4} hideDefaultCursor parallaxOn hoverDuration={0.2} cursorColor="myColor.5" cursorColorOnTarget="myColor.5" /> */}
       <Header opened={opened} toggle={toggle} />
 
       {/* MOBILE DRAWER PANEL */}
       <AppShell.Navbar p="xl" bg="#141517" style={{ borderBottom: "1px solid #2c2e33" }}>
-      <Stack gap="lg">
+        <Stack gap="lg">
           <Anchor href="#home" c="white" fz="lg" onClick={toggle}></Anchor>
           <Anchor href="#about" c="white" fz="lg" onClick={toggle}>
             About
@@ -39,7 +40,7 @@ export default function App() {
         <HeroSection />
         <SkillsSection />
         <About />
-      
+
         <Projects />
         <GetInTouch />
       </AppShell.Main>
