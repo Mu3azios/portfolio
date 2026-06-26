@@ -9,6 +9,9 @@ import { GetInTouch } from "./components/GetInTouch";
 import { SkillsSection } from "./components/Skills";
 // import TargetCursor from "./animated/targetCursor/TargetCursor";
 import "./App.css";
+import { SpeedInsights } from "@vercel/speed-insights/react"
+
+
 
 export default function App() {
   const [opened, { toggle }] = useDisclosure(); // Tracks if mobile drawer is open
@@ -17,6 +20,7 @@ export default function App() {
     <AppShell header={{ height: 70 }} navbar={{ width: "100%", breakpoint: "sm", collapsed: { desktop: true, mobile: !opened } }} padding="md">
       {/* 1. RENDER RENDERED HEADER COMPONENT */}
       {/* <TargetCursor spinDuration={4} hideDefaultCursor parallaxOn hoverDuration={0.2} cursorColor="myColor.5" cursorColorOnTarget="myColor.5" /> */}
+      <SpeedInsights/>
       <Header opened={opened} toggle={toggle} />
 
       {/* MOBILE DRAWER PANEL */}

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Container, Grid, Title, Text, Button, Image, Box, Flex } from "@mantine/core";
-import muaz from "../assets/muaz1.webp";
+import muaz from "../assets/muaz3.webp";
 import 'animate.css';
 
 
@@ -98,7 +98,7 @@ export function HeroSection() {
 
               <Button
                 component="a" // Turns the button into an <a> tag so href and download work
-                href="../assets/Muaz_Baytamouny_Resume.pdf" // Uses the dynamic bundled path from Vite
+                href="/Muaz_Baytamouny_Resume.pdf" // Uses the dynamic bundled path from Vite
                 download="Muaz_Baytamouny_Resume.pdf" // Forces the browser download
                 variant="outline"
                 color="myColor.5" // Clean lime green border outline
@@ -147,9 +147,11 @@ export function HeroSection() {
                 alt="Muaz Portfolio Profile Picture"
                 w="100%"
                 h="100%"
-                fit="contain"
+                fit="cover"
                 style={{
                   transform: "scale(1.3)",
+                  marginLeft:"2rem",
+            
                   // Kept your crisp white outline to contrast against the new gradient glow!
                   filter: "drop-shadow(1px 0px 0px #ffffff) drop-shadow(-1px 0px 0px #ffffff) drop-shadow(0px 1px 0px #ffffff) drop-shadow(0px -1px 0px #ffffff)",
                 }}
